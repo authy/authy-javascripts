@@ -376,8 +376,8 @@ Authy.UI = function() {
         var listId = obj.getAttribute("data-list-id");
         document.getElementById('countries-input-'+listId).value = obj.getAttribute("data-name");
         document.getElementById('countries-autocomplete-'+listId).style.display = "none";
-
         document.getElementById('country-code-'+listId).value = obj.getAttribute('rel');
+        document.getElementById('authy-country-code').innerText = "+"+obj.getAttribute('rel');
     }
 
     this.setTooltip = function(title, msg) {
